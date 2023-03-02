@@ -35,6 +35,7 @@ export default {
 <template>
   <div
     class="
+      z-10
       mt-10
       pt-10
       sm:pt-14 sm:mt-20

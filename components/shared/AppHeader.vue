@@ -42,7 +42,7 @@ export default {
 </script>
 
 <template>
-  <nav id="nav" class="sm:container sm:mx-auto">
+  <nav id="nav" class="sm:container sm:mx-auto z-10">
     <!-- Header -->
     <div
       class="
@@ -56,84 +56,8 @@ export default {
     >
       <!-- Header menu links and small screen hamburger menu -->
       <div class="flex justify-between items-center px-6 sm:px-0">
-        <!-- Header logos -->
-        <div>
-          <NuxtLink to="/">
-            <img
-              v-if="this.$colorMode.value == 'dark'"
-              src="~/static/logo-light.svg"
-              class="w-36"
-              alt="Light Logo"
-            />
-
-            <img
-              v-else
-              src="~/static/logo-dark.svg"
-              alt="Color Logo"
-              class="w-36"
-            />
-          </NuxtLink>
-        </div>
-
-        <!-- Theme switcher small screen -->
-        <button
-          @click="themeSwitcher"
-          class="
-            sm:hidden
-            ml-8
-            bg-primary-light
-            dark:bg-ternary-dark
-            px-2
-            py-1.5
-            sm:px-3 sm:py-2
-            shadow-sm
-            rounded-xl
-            cursor-pointer
-          "
-        >
-          <!-- Dark mode icon -->
-          <svg
-            v-if="$colorMode.value == 'light'"
-            xmlns="http://www.w3.org/2000/svg"
-            class="
-              text-liText-ternary-dark
-              hover:text-gray-400
-              dark:text-liText-ternary-light
-              dark:hover:text-liBorder-primary-light
-              w-6
-              h-6
-            "
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            />
-          </svg>
-          <!-- Light mode icon -->
-          <svg
-            v-else
-            xmlns="http://www.w3.org/2000/svg"
-            class="text-gray-200 hover:text-gray-50 w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-            />
-          </svg>
-        </button>
-
         <!-- Small screen hamburger menu -->
-        <div class="sm:hidden">
+        <div class="sm:hidden z-10">
           <button
             @click="isOpen = !isOpen"
             type="button"
@@ -169,19 +93,27 @@ export default {
       </div>
 
       <!-- Header links -->
-      <AppNavigation
-        :isOpen="isOpen"
-        :showModal="showModal"
-        :modal="modal"
-        :categories="categories"
-      />
 
       <!-- Header right section buttons -->
       <div
-        class="hidden sm:flex justify-between items-center flex-col md:flex-row"
+        class="
+          hidden
+          sm:flex
+          z-10
+          justify-between
+          items-center
+          flex-col
+          md:flex-row
+        "
       >
+        <AppNavigation
+          :isOpen="isOpen"
+          :showModal="showModal"
+          :modal="modal"
+          :categories="categories"
+        />
         <!-- Hire me button -->
-        <div class="font-general-medium hidden md:block">
+        <!--   <div class="font-general-medium hidden md:block">
           <button
             class="
               text-md
@@ -199,62 +131,31 @@ export default {
             Hire Me
           </button>
         </div>
-
-        <!-- Theme switcher large screen -->
-        <button
-          @click="themeSwitcher"
-          class="
-            sm:ml-6
-            bg-primary-light
-            dark:bg-ternary-dark
-            px-2
-            py-2
-            shadow-sm
-            rounded-lg
-            cursor-pointer
-          "
-        >
-          <!-- Dark mode icon -->
-          <svg
-            v-if="$colorMode.value == 'light'"
-            xmlns="http://www.w3.org/2000/svg"
-            class="
-              text-liText-ternary-dark
-              hover:text-gray-400
-              dark:text-liText-ternary-light
-              dark:hover:text-liBorder-primary-light
-              w-6
-              h-6
-            "
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            />
-          </svg>
-          <!-- Light mode icon -->
-          <svg
-            v-else
-            xmlns="http://www.w3.org/2000/svg"
-            class="text-gray-200 hover:text-gray-50 w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-            />
-          </svg>
-        </button>
+ -->
       </div>
+    </div>
+
+    <!-- Header logos -->
+    <div
+      class="
+        mt-56
+        md:mt-0 md:pr-44
+        w-full
+        z-10
+        flex
+        justify-center
+        items-center
+      "
+    >
+      <p v-if="$colorMode.value == 'dark'" class="alecText text-8xl text-white">
+        Alec
+      </p>
+      <p
+        v-if="$colorMode.value == 'light'"
+        class="alecText text-8xl text-black"
+      >
+        Alec
+      </p>
     </div>
 
     <!-- Hire me modal -->
@@ -266,3 +167,11 @@ export default {
     />
   </nav>
 </template>
+
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans+Caption&display=swap");
+
+.alecText {
+  font-family: "Cookie", cursive;
+}
+</style>

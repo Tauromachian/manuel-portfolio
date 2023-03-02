@@ -40,7 +40,7 @@ export default {
 </script>
 
 <template>
-  <div class="pt-10 sm:pt-20 md:pt-24">
+  <div class="z-10 pt-10 sm:pt-20 md:pt-24">
     <!-- Projects grid header -->
     <div class="text-center">
       <p

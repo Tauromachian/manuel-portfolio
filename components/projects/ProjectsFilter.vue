@@ -26,6 +26,7 @@ export default {
     class="
       font-general-medium
       px-4
+      z-10
       py-2
       border-1 border-gray-200
       dark:border-secondary-dark

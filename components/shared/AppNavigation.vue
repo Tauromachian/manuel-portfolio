@@ -16,14 +16,14 @@ export default {
       sm:mt-3 sm:flex
       p-5
       sm:p-0
+      z-10
       justify-center
       items-center
       shadow-lg
       sm:shadow-none
     "
   >
-    <NuxtLink
-      to="/projects"
+    <h3
       class="
         block
         text-left text-lg text-primary-dark
@@ -35,10 +35,10 @@ export default {
         sm:py-2
       "
       aria-label="Projects"
-      >Projects</NuxtLink
     >
-    <NuxtLink
-      to="/about"
+      Sobre mi
+    </h3>
+    <h3
       class="
         block
         text-left text-lg text-primary-dark
@@ -55,10 +55,10 @@ export default {
         dark:border-secondary-dark
       "
       aria-label="About Me"
-      >About Me</NuxtLink
     >
-    <NuxtLink
-      to="/contact"
+      Lo más reciente
+    </h3>
+    <h3
       class="
         block
         text-left text-lg text-primary-dark
@@ -75,38 +75,9 @@ export default {
         dark:border-secondary-dark
       "
       aria-label="Contact"
-      >Contact</NuxtLink
     >
-    <div
-      class="
-        font-general-regular
-        border-t-2
-        pt-3
-        sm:pt-0 sm:border-t-0
-        border-primary-light
-        dark:border-secondary-dark
-      "
-    >
-      <button
-        class="
-          sm:hidden
-          block
-          text-left text-md
-          bg-indigo-500
-          hover:bg-indigo-600
-          text-white
-          shadow-sm
-          rounded-md
-          px-4
-          py-2
-          mt-2
-        "
-        @click="showModal()"
-        aria-label="Hire Me Button"
-      >
-        Hire Me
-      </button>
-    </div>
+      Contáctame
+    </h3>
   </div>
 </template>
 

@@ -21,15 +21,40 @@ export default {
   <section
     class="
       flex flex-col
-      sm:justify-between
+      h-screen
+      md:justify-between
       items-center
-      sm:flex-row
+      md:flex-row
       mt-12
-      sm:mt-10
+      md:mt-10
     "
   >
+    <!-- Banner right illustration -->
+
+    <div
+      style="width: auto; min-width: min-content"
+      class="
+        w-full
+        absolute
+        h-full
+        md:w-1/2 md:left-1/2
+        top-0
+        z-0
+        right-0
+        flex
+        justify-end
+      "
+    >
+      <!--   <img src="~/static/music-note.svg" alt="" />
+      -->
+      <img
+        class="w-full h-full object-cover"
+        src="~/static/alecPicture.png"
+        alt="Alec Picture"
+      />
+    </div>
     <!-- Banner left contents -->
-    <div class="w-full md:w-1/3 text-left">
+    <div class="w-full md:w-1/3 md:mb-52 text-left z-10">
       <h1
         class="
           font-general-semibold
@@ -43,7 +68,7 @@ export default {
           uppercase
         "
       >
-        Hi, Iam Stoman
+        Hola!
       </h1>
       <p
         class="
@@ -55,10 +80,10 @@ export default {
           text-center
           sm:text-left
           leading-none
-          text-gray-400
+          text-white
         "
       >
-        A Full-Stack Developer & Design Enthusiast
+        Mi nombre es Alec. Un placer tenerte aca!!
       </p>
       <div class="flex justify-center sm:block">
         <a
@@ -74,42 +99,27 @@ export default {
             mb-6
             sm:mb-0
             text-lg
-            border border-indigo-200
             dark:border-ternary-dark
             py-2.5
             sm:py-3
             shadow-lg
             rounded-lg
-            bg-indigo-50
+            bg-red-600
             focus:ring-1 focus:ring-indigo-900
             hover:bg-indigo-500
-            text-gray-500
+            text-white
             hover:text-white
             duration-500
           "
           aria-label="Download Resume"
         >
-          <i
-            data-feather="arrow-down-circle"
-            class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
-          ></i>
           <span class="text-sm sm:text-lg font-general-medium duration-100"
-            >Download CV</span
+            >Contáctame</span
           ></a
         >
       </div>
     </div>
-
-    <!-- Banner right illustration -->
-    <div class="w-full md:w-2/3 text-right float-right">
-      <img
-        v-if="this.$colorMode.value == 'dark'"
-        src="~/static/developer-dark.svg"
-        alt="Developer Dark"
-      />
-      <img v-else src="~/static/developer.svg" alt="Developer Light" />
-    </div>
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style></style>

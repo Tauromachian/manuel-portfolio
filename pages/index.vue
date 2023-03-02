@@ -2,6 +2,9 @@
 import AppBanner from "../components/shared/AppBanner.vue";
 import Button from "../components/reusable/Button.vue";
 export default {
+  created() {
+    this.$colorMode.value = "dark";
+  },
   scrollToTop: true,
   components: { AppBanner, Button },
 };
@@ -11,10 +14,10 @@ export default {
   <div class="container mx-auto">
     <AppBanner />
 
-    <ProjectsGrid />
+    <ProjectsGrid class="z-10" />
 
     <!-- View more projects button -->
-    <div class="mt-5 sm:mt-14 flex justify-center">
+    <div class="mt-5 z-10 sm:mt-14 flex justify-center">
       <NuxtLink
         to="/projects"
         class="
@@ -42,7 +45,8 @@ export default {
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans+Caption&display=swap");
+
 * {
   font-family: "PT Sans Caption", sans-serif;
 }
