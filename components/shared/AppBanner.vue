@@ -29,8 +29,10 @@ export default {
       md:mt-10
     "
   >
-    <!-- Banner right illustration -->
+    <!-- Music Note 2Corchea -->
+    <img class="absolute top-0 left-0" src="~/static/music-note.svg" alt="" />
 
+    <!-- Banner right illustration -->
     <div
       style="width: auto; min-width: min-content"
       class="
@@ -45,10 +47,17 @@ export default {
         justify-end
       "
     >
-      <!--   <img src="~/static/music-note.svg" alt="" />
-      -->
       <img
-        class="w-full h-full object-cover"
+        class="
+          w-screen
+          filter
+          brightness-50
+          md:brightness-100
+          h-full
+          object-cover
+          rounded-b-3xl
+          md:rounded-br-none
+        "
         src="~/static/alecPicture.png"
         alt="Alec Picture"
       />
@@ -104,9 +113,9 @@ export default {
             sm:py-3
             shadow-lg
             rounded-lg
-            bg-red-600
+            bg-primary-red
+            hover:bg-red-400
             focus:ring-1 focus:ring-indigo-900
-            hover:bg-indigo-500
             text-white
             hover:text-white
             duration-500

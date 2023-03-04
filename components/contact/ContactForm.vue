@@ -12,44 +12,38 @@ export default {
 
 <template>
   <!-- Contact form -->
-  <div class="w-full md:w-1/2">
+  <div class="w-full max-w-xl md:w-2/3 flex justify-center items-center">
+    <div class="absolute -right-16 z-0">
+      <img class="object-contain w-2/3 h-auto" src="/claveSol.svg" alt="" />
+    </div>
     <div
       class="
+        w-full
         leading-loose
         max-w-xl
         m-4
+        z-10
         p-7
         bg-secondary-light
-        dark:bg-secondary-dark
+        dark:bg-primary-opaco-dark
         rounded-xl
         shadow-xl
         text-left
       "
     >
-      <p
-        class="
-          font-general-medium
-          text-primary-dark
-          dark:text-primary-light
-          text-2xl
-          mb-8
-        "
-      >
-        Contact Form
-      </p>
       <form
         @submit="
           (e) => {
             e.preventDefault;
           }
         "
-        class="font-general-regular space-y-7"
+        class="formLetra space-y-7"
       >
         <div class="">
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="name"
-            >Full Name</label
+            >Nombre</label
           >
           <input
             class="
@@ -62,7 +56,7 @@ export default {
               text-primary-dark
               dark:text-secondary-light
               bg-ternary-light
-              dark:bg-ternary-dark
+              dark:bg-primary-opaco-cleandark
               rounded-md
               shadow-sm
               text-md
@@ -71,15 +65,15 @@ export default {
             name="name"
             type="text"
             required=""
-            placeholder="Your Name"
-            aria-label="Name"
+            placeholder="Tu Nombre"
+            aria-label="Nombre"
           />
         </div>
         <div class="mt-6">
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="email"
-            >Email</label
+            >Correo</label
           >
           <input
             class="
@@ -92,7 +86,7 @@ export default {
               text-primary-dark
               dark:text-secondary-light
               bg-ternary-light
-              dark:bg-ternary-dark
+              dark:bg-primary-opaco-cleandark
               rounded-md
               shadow-sm
               text-md
@@ -101,38 +95,8 @@ export default {
             name="email"
             type="text"
             required=""
-            placeholder="Your Email"
+            placeholder="tu@email.tu"
             aria-label="Email"
-          />
-        </div>
-        <div class="mt-6">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="subject"
-            >Subject</label
-          >
-          <input
-            class="
-              w-full
-              px-5
-              py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-ternary-dark
-              rounded-md
-              shadow-sm
-              text-md
-            "
-            id="subject"
-            name="subject"
-            type="text"
-            required=""
-            placeholder="Subject"
-            aria-label="Subject"
           />
         </div>
 
@@ -140,7 +104,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="message"
-            >Message</label
+            >Mensaje</label
           >
           <textarea
             class="
@@ -153,7 +117,7 @@ export default {
               text-primary-dark
               dark:text-secondary-light
               bg-ternary-light
-              dark:bg-ternary-dark
+              dark:bg-primary-opaco-cleandark
               rounded-md
               shadow-sm
               text-md
@@ -162,31 +126,39 @@ export default {
             name="message"
             cols="14"
             rows="6"
+            placeholder="Dime lo que quieras"
             aria-label="Message"
           ></textarea>
         </div>
 
         <div class="mt-6">
           <Button
-            title="Send Message"
+            title="Enviar Mensaje"
             class="
+              float-right
               px-4
               py-2.5
               text-white
               tracking-wider
-              bg-indigo-500
-              hover:bg-indigo-600
+              bg-primary-red
+              hover:bg-red-400
               focus:ring-1 focus:ring-indigo-900
               rounded-lg
               duration-500
             "
             type="submit"
-            aria-label="Send Message"
+            aria-label="Enviar Mensaje"
           />
         </div>
       </form>
     </div>
   </div>
 </template>
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans+Caption&display=swap");
 
-<style lang="scss" scoped></style>
+.formLetra {
+  font-family: "Cookie", cursive;
+  font-family: "PT Sans Caption", sans-serif;
+}
+</style>

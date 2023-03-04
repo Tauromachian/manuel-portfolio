@@ -11,7 +11,7 @@
     </transition>
 
     <!-- App footer -->
-    <AppFooter />
+    <AppContact />
 
     <!-- Go back to top when scrolled down -->
     <div
@@ -36,7 +36,7 @@
 <script>
 import feather from "feather-icons";
 import AppHeader from "../components/shared/AppHeader.vue";
-import AppFooter from "../components/shared/AppFooter.vue";
+import AppContact from "../components/shared/AppContact.vue";
 import BackToTop from "../components/BackToTop.vue";
 export default {
   data: () => {
@@ -47,7 +47,7 @@ export default {
   mounted() {
     feather.replace();
   },
-  components: { AppFooter, BackToTop, AppHeader },
+  components: { AppContact, BackToTop, AppHeader },
 };
 </script>
 
