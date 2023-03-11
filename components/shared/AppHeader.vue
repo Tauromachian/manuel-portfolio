@@ -67,14 +67,7 @@ export default {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="
-                h-7
-                w-7
-                mt-1
-                fill-current
-                text-secondary-dark
-                dark:text-ternary-light
-              "
+              class="h-7 w-7 mt-1 fill-current text-ternary-light"
             >
               <path
                 v-if="isOpen"
@@ -147,15 +140,7 @@ export default {
         items-center
       "
     >
-      <p v-if="$colorMode.value == 'dark'" class="alecText text-8xl text-white">
-        Alec
-      </p>
-      <p
-        v-if="$colorMode.value == 'light'"
-        class="alecText text-8xl text-black"
-      >
-        Alec
-      </p>
+      <p class="alecText text-8xl text-white">Alec</p>
     </div>
 
     <!-- Hire me modal -->

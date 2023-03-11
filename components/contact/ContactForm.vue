@@ -24,8 +24,7 @@ export default {
         m-4
         z-10
         p-7
-        bg-secondary-light
-        dark:bg-primary-opaco-dark
+        bg-primary-opaco-dark
         rounded-xl
         shadow-xl
         text-left
@@ -40,9 +39,7 @@ export default {
         class="formLetra space-y-7"
       >
         <div class="">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="name"
+          <label class="block text-lg text-primary-light mb-2" for="name"
             >Nombre</label
           >
           <input
@@ -50,13 +47,9 @@ export default {
               w-full
               px-5
               py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-primary-opaco-cleandark
+              border border-primary-dark border-opacity-50
+              text-primary-light
+              bg-primary-opaco-cleandark
               rounded-md
               shadow-sm
               text-md
@@ -70,9 +63,7 @@ export default {
           />
         </div>
         <div class="mt-6">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="email"
+          <label class="block text-lg text-primary-light mb-2" for="email"
             >Correo</label
           >
           <input
@@ -80,13 +71,9 @@ export default {
               w-full
               px-5
               py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-primary-opaco-cleandark
+              border border-primary-dark border-opacity-50
+              text-primary-light
+              bg-primary-opaco-cleandark
               rounded-md
               shadow-sm
               text-md
@@ -101,9 +88,7 @@ export default {
         </div>
 
         <div class="mt-6">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="message"
+          <label class="block text-lg text-primary-light mb-2" for="message"
             >Mensaje</label
           >
           <textarea
@@ -111,13 +96,9 @@ export default {
               w-full
               px-5
               py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-primary-opaco-cleandark
+              border border-primary-dark border-opacity-50
+              text-primary-light
+              bg-primary-opaco-cleandark
               rounded-md
               shadow-sm
               text-md

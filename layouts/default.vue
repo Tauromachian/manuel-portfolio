@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="bg-secondary-light dark:bg-primary-dark min-h-screen flex flex-col"
-  >
+  <div class="bg-primary-dark min-h-screen flex flex-col">
     <!-- App header -->
     <AppHeader />
 
@@ -45,6 +43,7 @@ export default {
     };
   },
   mounted() {
+    this.$colorMode.value = "dark";
     feather.replace();
   },
   components: { AppContact, BackToTop, AppHeader },

@@ -28,15 +28,12 @@ export default {
       px-4
       z-10
       py-2
-      border-1 border-gray-200
-      dark:border-secondary-dark
+      border-1 border-gray-200 border-secondary-dark
       rounded-lg
       text-sm
       sm:text-md
-      bg-secondary-light
-      dark:bg-ternary-dark
-      text-primary-dark
-      dark:text-ternary-light
+      bg-secondary-light bg-ternary-dark
+      text-primary-dark text-ternary-light
     "
   >
     <option value class="text-sm sm:text-md">All Projects</option>

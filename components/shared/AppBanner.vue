@@ -72,8 +72,7 @@ export default {
           xl:text-4xl
           text-center
           sm:text-left
-          text-ternary-dark
-          dark:text-primary-light
+          text-ternary-light
           uppercase
         "
       >
@@ -108,7 +107,7 @@ export default {
             mb-6
             sm:mb-0
             text-lg
-            dark:border-ternary-dark
+            border-ternary-dark
             py-2.5
             sm:py-3
             shadow-lg

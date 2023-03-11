@@ -50,14 +50,13 @@ export default {
           sm:text-5xl
           font-semibold
           mb-2
-          text-ternary-dark
-          dark:text-ternary-light
+          text-ternary-dark text-ternary-light
         "
       >
         {{ projectsHeading }}
       </p>
       <!-- Note: This description is commented out, but if you want to see it, just uncomment this -->
-      <!-- <p class="text-lg sm:text-xl text-gray-500 dark:text-ternary-light">
+      <!-- <p class="text-lg sm:text-xl text-gray-500 text-ternary-light">
         {{ projectsDescription }}
       </p> -->
     </div>
@@ -67,9 +66,7 @@ export default {
       <h3
         class="
           font-general-regular
-          text-center text-secondary-dark
-          dark:text-ternary-light
-          text-md
+          text-center text-secondary-dark text-ternary-light text-md
           sm:text-xl
           font-normal
           mb-4
@@ -81,8 +78,7 @@ export default {
         class="
           flex
           justify-between
-          border-b border-primary-light
-          dark:border-secondary-dark
+          border-b border-primary-light border-secondary-dark
           pb-3
           gap-2
         "
@@ -92,8 +88,7 @@ export default {
             class="
               hidden
               sm:block
-              bg-primary-light
-              dark:bg-ternary-dark
+              bg-primary-light bg-ternary-dark
               p-2.5
               shadow-sm
               rounded-xl
@@ -102,7 +97,7 @@ export default {
           >
             <i
               data-feather="search"
-              class="text-ternary-dark dark:text-ternary-light"
+              class="text-ternary-dark text-ternary-light"
             ></i>
           </span>
           <input
@@ -113,15 +108,12 @@ export default {
               pr-1
               sm:px-4
               py-2
-              border-1 border-gray-200
-              dark:border-secondary-dark
+              border-1 border-gray-200 border-secondary-dark
               rounded-lg
               text-sm
               sm:text-md
-              bg-secondary-light
-              dark:bg-ternary-dark
-              text-primary-dark
-              dark:text-ternary-light
+              bg-secondary-light bg-ternary-dark
+              text-primary-dark text-ternary-light
             "
             id="name"
             name="name"
@@ -147,8 +139,7 @@ export default {
           cursor-pointer
           mb-10
           sm:mb-0
-          bg-secondary-light
-          dark:bg-ternary-dark
+          bg-secondary-light bg-ternary-dark
         "
         aria-label="Single Project"
       >
@@ -164,8 +155,7 @@ export default {
             <p
               class="
                 font-general-semibold
-                text-xl text-ternary-dark
-                dark:text-ternary-light
+                text-xl text-ternary-dark text-ternary-light
                 font-semibold
                 mb-2
               "
@@ -175,8 +165,7 @@ export default {
             <span
               class="
                 font-general-medium
-                text-lg text-ternary-dark
-                dark:text-ternary-light
+                text-lg text-ternary-dark text-ternary-light
               "
               >{{ project.category }}</span
             >

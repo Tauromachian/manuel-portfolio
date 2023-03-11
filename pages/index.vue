@@ -14,8 +14,6 @@ export default {
   <div class="container mx-auto">
     <AppBanner />
 
-    <ProjectsGrid class="z-10" />
-
     <!-- View more projects button -->
     <div class="mt-5 z-10 sm:mt-14 flex justify-center">
       <NuxtLink

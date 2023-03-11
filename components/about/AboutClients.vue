@@ -21,7 +21,6 @@ export default {
         text-2xl text-center
         sm:text-3xl
         text-primary-dark
-        dark:text-primary-light
       "
     >
       {{ clientsHeading }}

@@ -19,13 +19,12 @@ export default {
         w-64
         py-5
         px-10
-        border border-ternary-light
-        dark:border-ternary-dark
+        border border-ternary-light border-ternary-dark
         shadow-sm
         rounded-lg
         mb-8
         cursor-pointer
-        dark:bg-secondary-light
+        bg-secondary-light
       "
     />
   </div>

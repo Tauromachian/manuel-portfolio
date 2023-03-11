@@ -36,7 +36,6 @@ export default {
             sm:text-4xl
             font-bold
             text-primary-dark
-            dark:text-primary-light
             mt-14
             sm:mt-20
             mb-7
@@ -48,32 +47,20 @@ export default {
           <div class="flex items-center mr-10">
             <i
               data-feather="clock"
-              class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+              class="w-4 h-4 text-ternary-dark text-ternary-light"
             ></i>
             <span
-              class="
-                font-general-medium
-                ml-2
-                leading-none
-                text-primary-dark
-                dark:text-primary-light
-              "
+              class="font-general-medium ml-2 leading-none text-primary-dark"
               >{{ project.publishDate }}</span
             >
           </div>
           <div class="flex items-center">
             <i
               data-feather="tag"
-              class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+              class="w-4 h-4 text-ternary-dark text-ternary-light"
             ></i>
             <span
-              class="
-                font-general-medium
-                ml-2
-                leading-none
-                text-primary-dark
-                dark:text-primary-light
-              "
+              class="font-general-medium ml-2 leading-none text-primary-dark"
               >{{ project.tag }}</span
             >
           </div>
@@ -100,14 +87,7 @@ export default {
         <div class="w-full sm:w-1/3 text-left">
           <!-- Single project client details -->
           <div class="mb-7">
-            <p
-              class="
-                font-general-medium
-                text-2xl text-secondary-dark
-                dark:text-secondary-light
-                mb-2
-              "
-            >
+            <p class="font-general-medium text-2xl text-secondary-dark mb-2">
               {{ project.clientTitle }}
             </p>
             <ul class="leading-loose">
@@ -116,8 +96,7 @@ export default {
                 :key="info.id"
                 class="
                   font-general-regular
-                  text-ternary-dark
-                  dark:text-ternary-light
+                  text-ternary-dark text-ternary-light
                 "
               >
                 <span>{{ info.title }}: </span>
@@ -140,19 +119,14 @@ export default {
             <p
               class="
                 font-general-medium
-                text-2xl text-ternary-dark
-                dark:text-ternary-light
+                text-2xl text-ternary-dark text-ternary-light
                 mb-2
               "
             >
               {{ project.objectivesTitle }}
             </p>
             <p
-              class="
-                font-general-regular
-                text-primary-dark
-                dark:text-ternary-light
-              "
+              class="font-general-regular text-primary-dark text-ternary-light"
             >
               {{ project.objectivesDetails }}
             </p>
@@ -163,19 +137,14 @@ export default {
             <p
               class="
                 font-general-medium
-                text-2xl text-ternary-dark
-                dark:text-ternary-light
+                text-2xl text-ternary-dark text-ternary-light
                 mb-2
               "
             >
               {{ project.techTitle }}
             </p>
             <p
-              class="
-                font-general-regular
-                text-primary-dark
-                dark:text-ternary-light
-              "
+              class="font-general-regular text-primary-dark text-ternary-light"
             >
               {{ project.technologies.join(", ") }}
             </p>
@@ -186,8 +155,7 @@ export default {
             <p
               class="
                 font-general-medium
-                text-2xl text-ternary-dark
-                dark:text-ternary-light
+                text-2xl text-ternary-dark text-ternary-light
                 mb-2
               "
             >
@@ -201,11 +169,9 @@ export default {
                 target="__blank"
                 aria-label="Share Project"
                 class="
-                  bg-ternary-light
-                  dark:bg-ternary-dark
+                  bg-ternary-light bg-ternary-dark
                   text-gray-400
-                  hover:text-primary-dark
-                  dark:hover:text-primary-light
+                  hover:text-primary-dark hover:
                   p-2
                   rounded-lg
                   shadow-sm
@@ -225,9 +191,7 @@ export default {
           <p
             class="
               font-general-medium
-              text-primary-dark
-              dark:text-primary-light
-              text-2xl
+              text-primary-dark text-2xl
               font-bold
               mb-7
             "
@@ -240,8 +204,7 @@ export default {
             class="
               font-general-regular
               mb-5
-              text-lg text-ternary-dark
-              dark:text-ternary-light
+              text-lg text-ternary-dark text-ternary-light
             "
           >
             {{ projectDetail.details }}

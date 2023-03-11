@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <div class="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
+  <div class="mt-10 sm:mt-20 bg-primary-light bg-ternary-dark shadow-sm">
     <!-- About me counters start -->
     <div
       class="
@@ -30,12 +30,11 @@ export default {
             text-4xl
             font-bold
             text-secondary-dark
-            dark:text-secondary-light
             mb-2
           "
           >7+</span
         >
-        <span class="block text-md text-ternary-dark dark:text-ternary-light"
+        <span class="block text-md text-ternary-dark text-ternary-light"
           >Years of experience</span
         >
       </div>
@@ -48,12 +47,11 @@ export default {
             text-4xl
             font-bold
             text-secondary-dark
-            dark:text-secondary-light
             mb-2
           "
           >2k</span
         >
-        <span class="block text-md text-ternary-dark dark:text-ternary-light"
+        <span class="block text-md text-ternary-dark text-ternary-light"
           >Stars on GitHub</span
         >
       </div>
@@ -66,12 +64,11 @@ export default {
             text-4xl
             font-bold
             text-secondary-dark
-            dark:text-secondary-light
             mb-2
           "
           >32</span
         >
-        <span class="block text-md text-ternary-dark dark:text-ternary-light"
+        <span class="block text-md text-ternary-dark text-ternary-light"
           >Positive feedback</span
         >
       </div>
@@ -84,12 +81,11 @@ export default {
             text-4xl
             font-bold
             text-secondary-dark
-            dark:text-secondary-light
             mb-2
           "
           >77</span
         >
-        <span class="block text-md text-ternary-dark dark:text-ternary-light"
+        <span class="block text-md text-ternary-dark text-ternary-light"
           >Projects completed</span
         >
       </div>

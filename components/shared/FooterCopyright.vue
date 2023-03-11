@@ -17,11 +17,7 @@ export default {
 <template>
   <div class="flex justify-center items-center text-center">
     <div
-      class="
-        font-general-regular
-        text-lg text-ternary-dark
-        dark:text-ternary-light
-      "
+      class="font-general-regular text-lg text-ternary-dark text-ternary-light"
     >
       &copy; {{ copyrightDate }}.
       <a
@@ -29,8 +25,7 @@ export default {
         target="__blank"
         class="
           font-general-medium
-          hover:underline hover:text-indigo-600
-          dark:hover:text-indigo-300
+          hover:underline hover:text-indigo-600 hover:text-indigo-300
           duration-500
         "
         >{{ projectName }}</a
@@ -42,10 +37,8 @@ export default {
         class="
           font-general-medium
           text-secondary-dark
-          dark:text-secondary-light
           uppercase
-          hover:underline hover:text-indigo-600
-          dark:hover:text-indigo-300
+          hover:underline hover:text-indigo-600 hover:text-indigo-300
           duration-500
         "
         >{{ author }}</a

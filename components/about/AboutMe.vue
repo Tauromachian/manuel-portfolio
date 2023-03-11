@@ -28,9 +28,7 @@ export default {
         class="
           font-general-regular
           mb-4
-          text-ternary-dark
-          dark:text-ternary-light
-          text-lg
+          text-ternary-dark text-ternary-light text-lg
         "
       >
         {{ bio.bio }}
