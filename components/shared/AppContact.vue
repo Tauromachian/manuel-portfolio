@@ -80,7 +80,14 @@ export default {
               :key="id"
               :href="social.url"
               target="__blank"
-              class="cursor-pointer shadow-sm duration-500"
+              class="
+                cursor-pointer
+                shadow-sm
+                rounded-lg
+                transition-colors
+                duration-300
+                hover:bg-gray-200 hover:bg-opacity-25
+              "
             >
               <img :src="social.route" :alt="social.name" />
             </a>

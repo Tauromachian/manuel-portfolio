@@ -11,11 +11,9 @@ export default {
 </script>
 
 <template>
+  <!-- GO TO LAYOUTS/DEFAULT TO SEE THE CONTENT OF THE PAGE -->
   <div class="container mx-auto">
     <AppBanner />
-
-    <!-- View more projects button -->
-    <div class="mt-5 z-10 sm:mt-14 flex justify-center"></div>
   </div>
 </template>
 
