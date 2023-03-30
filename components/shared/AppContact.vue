@@ -59,7 +59,7 @@ export default {
             textTitle
           "
         >
-          Follow me
+          Contáctame
         </p>
 
         <!-- Contact section -->
