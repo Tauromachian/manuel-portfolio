@@ -7,6 +7,8 @@
     <transition name="fade" mode="out-in">
       <Nuxt />
     </transition>
+
+    <AboutMe></AboutMe>
     <SongList></SongList>
     <!-- App footer -->
     <AppContact />
@@ -37,6 +39,7 @@ import AppHeader from "../components/shared/AppHeader.vue";
 import AppContact from "../components/shared/AppContact.vue";
 import BackToTop from "../components/BackToTop.vue";
 import SongList from "../components/mostRecent/songList.vue";
+import AboutMe from "../components/about/AboutMe.vue";
 export default {
   data: () => {
     return {
@@ -47,7 +50,7 @@ export default {
     this.$colorMode.value = "dark";
     feather.replace();
   },
-  components: { SongList, AppContact, BackToTop, AppHeader },
+  components: { SongList, AppContact, BackToTop, AppHeader, AboutMe },
 };
 </script>
 

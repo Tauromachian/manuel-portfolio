@@ -24,22 +24,33 @@ export default {
     "
   >
     <h3
-      class="block text-left text-lg text-ternary-light sm:mx-4 mb-2 sm:py-2"
+      class="
+        rounded-lg
+        p-5
+        cursor-pointer
+        transition-colors
+        duration-300
+        hover:bg-gray-200 hover:bg-opacity-25
+        block
+        text-left text-lg text-ternary-light
+      "
       aria-label="Projects"
     >
       Sobre mi
     </h3>
     <h3
       class="
+        rounded-lg
+        cursor-pointer
+        transition-colors
+        duration-300
+        p-5
+        hover:bg-gray-200 hover:bg-opacity-25
         block
         text-left text-lg text-ternary-light
         hover:text-secondary-light hover:
-        sm:mx-4
-        mb-2
-        sm:py-2
         border-t-2
-        pt-3
-        sm:pt-2 sm:border-t-0
+        sm:border-t-0
         border-primary-light
       "
       aria-label="About Me"
@@ -48,15 +59,17 @@ export default {
     </h3>
     <h3
       class="
+        rounded-lg
+        cursor-pointer
+        transition-colors
+        duration-300
+        p-5
+        hover:bg-gray-200 hover:bg-opacity-25
         block
         text-left text-lg text-ternary-light
         hover:text-secondary-light hover:
-        sm:mx-4
-        mb-2
-        sm:py-2
         border-t-2
-        pt-3
-        sm:pt-2 sm:border-t-0
+        sm:border-t-0
         border-secondary-light
       "
       aria-label="Contact"

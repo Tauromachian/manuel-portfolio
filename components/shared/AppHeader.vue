@@ -42,7 +42,11 @@ export default {
 </script>
 
 <template>
-  <nav id="nav" class="sm:container sm:mx-auto z-10">
+  <nav
+    style="background: linear-gradient(black, rgba(255, 255, 255, 0))"
+    id="nav"
+    class="sm:container sm:mx-auto z-10"
+  >
     <!-- Header -->
     <div
       class="

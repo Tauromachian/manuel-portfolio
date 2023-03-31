@@ -1,38 +1,93 @@
-<script>
-import { mapState } from "vuex";
-
-export default {
-  data: () => {
-    return {
-      // @todo
-    };
-  },
-  computed: {
-    ...mapState(["aboutMe"]),
-  },
-};
-</script>
-
 <template>
-  <div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
-    <!-- About profile image -->
-    <div class="w-full sm:w-1/4 mb-7 sm:mb-0">
-      <img src="~/static/alecPicture.png" class="rounded-lg w-96" alt="" />
+  <div class="flex flex-col md:flex-row text-white h-screen">
+    <div class="w-full md:w-1/2 px-5 md:pl-28 flex flex-col justify-center">
+      <h2 class="text-left font-bold mb-4 textTitle text-6xl">Sobre mi</h2>
+      <p class="text-left mb-4 formLetra">
+        Soy Alec, cantante y compositor cubano. He estado trabajando duro para
+        construir mi base de fans. Comencé publicando mi música en redes
+        sociales como YouTube y Facebook. Luego comencé a recibir solicitudes de
+        fans de todo el mundo para que mis canciones se publicaran en otras
+        plataformas. Si te interersa y quieres saber lo que hago solo hecha un
+        vistazo a la derecha.
+      </p>
     </div>
-
-    <!-- About details -->
-    <div class="w-full sm:w-3/4 text-left">
-      <p
-        v-for="bio in aboutMe"
-        :key="bio.id"
+    <div class="w-full md:w-1/2 flex justify-center items-center p-5 md:p-20">
+      <div
+        style="height: 400px"
         class="
-          font-general-regular
-          mb-4
-          text-ternary-dark text-ternary-light text-lg
+          w-full
+          rounded-full
+          bg-primary-opaco-dark
+          flex
+          justify-center
+          items-center
         "
       >
-        {{ bio.bio }}
-      </p>
+        <div class="flex flex-col space-x-2 px-10">
+          <div>
+            <h3 class="generosFont text-3xl ml-4">Géneros</h3>
+          </div>
+
+          <div class="flex flex-row flex-wrap">
+            <div
+              v-for="(chip, index) in chips"
+              :key="index"
+              class="
+                w-24
+                bg-pink-900
+                px-5
+                py-1
+                m-1
+                rounded-lg
+                flex
+                justify-center
+                cursor-pointer
+              "
+            >
+              <p>{{ chip }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      chips: ["Balada", "Pop", "Dancehall", "Urbano"],
+    };
+  },
+};
+</script>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans+Caption&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans+Caption&family=Simonetta&display=swap");
+.generosFont {
+  font-family: "Simonetta", cursive;
+  font-weight: 100;
+}
+
+.formLetra {
+  font-family: "Cookie", cursive;
+  font-family: "PT Sans Caption", sans-serif;
+}
+.textTitle {
+  font-family: "Cookie", cursive;
+}
+
+.tamaño {
+  height: 400px;
+  width: 400px;
+}
+.midTamaño {
+  height: 500px;
+  width: 500px;
+}
+.maxTamaño {
+  height: 700px;
+  width: 700px;
+}
+</style>

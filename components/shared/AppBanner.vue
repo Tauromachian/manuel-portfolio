@@ -57,6 +57,7 @@ export default {
           object-cover
           rounded-b-3xl
           md:rounded-br-none
+          mt-6
         "
         src="~/static/alecPicture.png"
         alt="Alec Picture"
@@ -95,7 +96,6 @@ export default {
       </p>
       <div class="flex justify-center sm:block">
         <a
-          href="/Stoman-Resume.pdf"
           download=""
           class="
             flex
@@ -106,6 +106,7 @@ export default {
             mt-12
             mb-6
             sm:mb-0
+            cursor-pointer
             text-lg
             border-ternary-dark
             py-2.5
@@ -119,7 +120,6 @@ export default {
             hover:text-white
             duration-500
           "
-          aria-label="Download Resume"
         >
           <span class="text-sm sm:text-lg font-general-medium duration-100"
             >Contáctame</span
