@@ -51,9 +51,10 @@ export default {
         cursor-pointer
         flex
         p-2
-        bg-indigo-500
-        hover:bg-indigo-600
-        text-white
+        bg-primary-red
+        hover:bg-primary-opaco-cleandark
+        text-black
+        hover:text-white
         items-center
         hover:shadow-sm
         border-none

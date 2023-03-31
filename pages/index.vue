@@ -1,19 +1,19 @@
 <script>
-import AppBanner from "../components/shared/AppBanner.vue";
+import Main from "../components/main/Main.vue";
 import Button from "../components/reusable/Button.vue";
 export default {
   created() {
     this.$colorMode.value = "dark";
   },
   scrollToTop: true,
-  components: { AppBanner, Button },
+  components: { Main, Button },
 };
 </script>
 
 <template>
   <!-- GO TO LAYOUTS/DEFAULT TO SEE THE CONTENT OF THE PAGE -->
   <div class="container mx-auto">
-    <AppBanner />
+    <Main />
   </div>
 </template>
 

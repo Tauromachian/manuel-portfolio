@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-primary-dark min-h-screen flex flex-col">
+  <div class="bg-primary-dark min-h-screen w-full flex flex-col">
     <!-- App header -->
-    <AppHeader />
+    <Header />
 
     <!-- Render contents with transition -->
     <transition name="fade" mode="out-in">
@@ -9,9 +9,9 @@
     </transition>
 
     <AboutMe></AboutMe>
-    <SongList></SongList>
+    <MostRecent></MostRecent>
     <!-- App footer -->
-    <AppContact />
+    <Contact />
 
     <!-- Go back to top when scrolled down -->
     <div
@@ -35,10 +35,10 @@
 
 <script>
 import feather from "feather-icons";
-import AppHeader from "../components/shared/AppHeader.vue";
-import AppContact from "../components/shared/AppContact.vue";
+import Header from "../components/header/Header.vue";
+import Contact from "../components/contact/Contact.vue";
 import BackToTop from "../components/BackToTop.vue";
-import SongList from "../components/mostRecent/songList.vue";
+import MostRecent from "../components/mostRecent/MostRecent.vue";
 import AboutMe from "../components/about/AboutMe.vue";
 export default {
   data: () => {
@@ -50,7 +50,7 @@ export default {
     this.$colorMode.value = "dark";
     feather.replace();
   },
-  components: { SongList, AppContact, BackToTop, AppHeader, AboutMe },
+  components: { MostRecent, Contact, BackToTop, Header, AboutMe },
 };
 </script>
 

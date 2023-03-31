@@ -19,9 +19,9 @@ export default {
 
 <template>
   <section
+    style="height: 80vh"
     class="
       flex flex-col
-      h-screen
       md:justify-between
       items-center
       md:flex-row
@@ -120,6 +120,7 @@ export default {
             hover:text-white
             duration-500
           "
+          @click="$scrollTo('#contact')"
         >
           <span class="text-sm sm:text-lg font-general-medium duration-100"
             >Contáctame</span

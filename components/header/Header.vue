@@ -1,12 +1,10 @@
 <script>
 import { mapState } from "vuex";
-import HireMeModal from "../HireMeModal.vue";
-import AppNavigation from "./AppNavigation.vue";
+import Navigation from "./HeaderNavigation.vue";
 
 export default {
   components: {
-    HireMeModal,
-    AppNavigation,
+    Navigation,
   },
   data: () => {
     return {
@@ -42,11 +40,11 @@ export default {
 </script>
 
 <template>
-  <nav
-    style="background: linear-gradient(black, rgba(255, 255, 255, 0))"
-    id="nav"
-    class="sm:container sm:mx-auto z-10"
-  >
+  <nav style="" id="nav" class="sm:container sm:mx-auto z-10 float-right">
+    <div
+      style="background: linear-gradient(black, rgba(255, 255, 255, 0))"
+      class="w-screen h-28 absolute top-0 left-0"
+    ></div>
     <!-- Header -->
     <div
       class="
@@ -103,7 +101,7 @@ export default {
           md:flex-row
         "
       >
-        <AppNavigation
+        <Navigation
           :isOpen="isOpen"
           :showModal="showModal"
           :modal="modal"
@@ -146,14 +144,6 @@ export default {
     >
       <p class="alecText text-8xl text-white">Alec</p>
     </div>
-
-    <!-- Hire me modal -->
-    <HireMeModal
-      :showModal="showModal"
-      :modal="modal"
-      :categories="categories"
-      aria-modal="Hire Me Modal"
-    />
   </nav>
 </template>
 

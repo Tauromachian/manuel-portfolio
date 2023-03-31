@@ -45,7 +45,7 @@ export default {
 </script>
 
 <template>
-  <div class="container mx-auto">
+  <section id="contact" class="container mx-auto">
     <div class="pt-20 sm:pt-30 pb-8 mt-20">
       <!-- Footer social links -->
       <div
@@ -57,6 +57,7 @@ export default {
             text-6xl text-primary-light
             mb-5
             textTitle
+            z-10
           "
         >
           Contáctame
@@ -97,7 +98,7 @@ export default {
         <!-- Contact section -->
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

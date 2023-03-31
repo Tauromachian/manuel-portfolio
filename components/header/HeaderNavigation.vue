@@ -34,7 +34,7 @@ export default {
         block
         text-left text-lg text-ternary-light
       "
-      aria-label="Projects"
+      @click="$scrollTo('#about')"
     >
       Sobre mi
     </h3>
@@ -53,7 +53,7 @@ export default {
         sm:border-t-0
         border-primary-light
       "
-      aria-label="About Me"
+      @click="$scrollTo('#recent')"
     >
       Lo más reciente
     </h3>
@@ -72,7 +72,7 @@ export default {
         sm:border-t-0
         border-secondary-light
       "
-      aria-label="Contact"
+      @click="$scrollTo('#contact')"
     >
       Contáctame
     </h3>

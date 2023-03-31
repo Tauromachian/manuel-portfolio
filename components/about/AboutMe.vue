@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row text-white h-screen">
+  <section id="about" class="flex flex-col md:flex-row text-white h-screen">
     <div class="w-full md:w-1/2 px-5 md:pl-28 flex flex-col justify-center">
       <h2 class="text-left font-bold mb-4 textTitle text-6xl">Sobre mi</h2>
       <p class="text-left mb-4 formLetra">
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {
