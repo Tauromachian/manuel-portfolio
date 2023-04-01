@@ -11,12 +11,14 @@
       <p class="text-left mb-4 formLetra">
         Comencé publicando mi música en redes sociales como YouTube y Facebook.
         Luego comencé a recibir solicitudes de fans de todo el mundo para que
-        mis canciones se publicaran en otras plataformas. Si te interersa y
-        quieres saber lo que hago solo hecha un vistazo a la derecha.
+        mis canciones se publicaran en otras plataformas.
       </p>
-      <p class="text-left mb-4 formLetra">
+      <p class="hidden md:flex text-left mb-4 formLetra">
         Si te interersa y quieres saber lo que hago solo hecha un vistazo a la
         derecha.
+      </p>
+      <p class="flex md:hidden text-left mb-4 formLetra">
+        Si te interersa y quieres saber lo que hago solo hecha un vistazo abajo.
       </p>
     </div>
     <div class="w-full md:w-1/2 flex justify-center items-center p-5 md:p-20">
