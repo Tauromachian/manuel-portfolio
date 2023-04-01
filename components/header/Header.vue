@@ -63,7 +63,7 @@ export default {
           <button
             @click="isOpen = !isOpen"
             type="button"
-            class="focus:outline-none"
+            class="focus:outline-none z-20"
             aria-label="Hamburger Menu"
           >
             <svg
@@ -92,8 +92,9 @@ export default {
       <!-- Header right section buttons -->
       <div
         class="
-          hidden
-          sm:flex
+          absolute
+          w-full
+          sm:w-auto sm:relative sm:flex
           z-10
           justify-between
           items-center
