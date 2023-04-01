@@ -5,13 +5,14 @@
       <ul class="flex">
         <li
           class="
-            p-4
+            p-5
             rounded-lg
             cursor-pointer
             transition-colors
             duration-300
             hover:bg-gray-200 hover:bg-opacity-25
           "
+          :style="content == 'canciones' ? selected : {}"
           @click="content = 'canciones'"
         >
           Música
@@ -25,6 +26,7 @@
             duration-300
             hover:bg-gray-200 hover:bg-opacity-25
           "
+          :style="content == 'videos' ? selected : {}"
           @click="content = 'videos'"
         >
           Videos
@@ -38,6 +40,7 @@
             duration-300
             hover:bg-gray-200 hover:bg-opacity-25
           "
+          :style="content == 'fotos' ? selected : {}"
           @click="content = 'fotos'"
         >
           Fotos
@@ -46,21 +49,25 @@
     </div>
     <SongList v-if="content == 'canciones'" />
     <VideoList v-if="content == 'videos'" />
+    <FotoList v-if="content == 'fotos'" />
   </section>
 </template>
 
 <script>
 import SongList from "./songList.vue";
 import VideoList from "./videoList.vue";
+import FotoList from "./fotoList.vue";
 export default {
   data() {
     return {
       content: "canciones",
+      selected: { borderBottom: "solid 1px red" },
     };
   },
   components: {
     SongList,
     VideoList,
+    FotoList,
   },
 };
 </script>

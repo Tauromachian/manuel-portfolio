@@ -92,7 +92,7 @@ export default {
           text-white
         "
       >
-        Mi nombre es Alec. Un placer tenerte aca!!
+        Mi nombre es Alec. Es un placer tenerte por aquí
       </p>
       <div class="flex justify-center sm:block">
         <a

@@ -23,4 +23,7 @@ export default {
 * {
   font-family: "PT Sans Caption", sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 </style>
