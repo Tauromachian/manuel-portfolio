@@ -21,14 +21,14 @@
         Si te interersa y quieres saber lo que hago solo hecha un vistazo abajo.
       </p>
     </div>
-    <div class="w-full md:w-1/2 flex justify-center items-center p-5 md:p-20">
+    <div class="w-full md:w-1/2 flex justify-center items-center md:p-20">
       <svg
-        style="height: 600px"
         class="absolute mt-24 z-10"
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
+          class="w-96"
           fill="#222020"
           d="M58.9,-59C74.7,-43.1,84.8,-21.5,85,0.2C85.1,21.9,75.4,43.8,59.6,56.9C43.8,69.9,21.9,74.2,1.4,72.8C-19.1,71.4,-38.1,64.3,-54.2,51.2C-70.2,38.1,-83.2,19.1,-83.7,-0.5C-84.1,-20,-72,-39.9,-56,-55.8C-39.9,-71.8,-20,-83.6,0.8,-84.4C21.5,-85.1,43.1,-74.9,58.9,-59Z"
           transform="translate(100 100)"
@@ -39,12 +39,30 @@
         style="height: 400px"
         class="w-full rounded-full flex justify-center items-center z-10"
       >
-        <div class="flex flex-col space-x-2 px-1 ml-3 md:px-10 md:ml-12">
+        <div
+          class="
+            flex flex-col
+            space-x-2
+            px-16
+            md:ml-3 md:mt-12
+            justify-center
+            items-center
+            md:justify-start md:items-start
+            mt-6
+          "
+        >
           <div>
             <h3 class="generosFont text-3xl ml-4">Géneros</h3>
           </div>
 
-          <div class="flex flex-row flex-wrap">
+          <div
+            class="
+              flex flex-row flex-wrap
+              justify-center
+              items-center
+              md:justify-start md:items-start
+            "
+          >
             <div
               v-for="(chip, index) in chips"
               :key="index"

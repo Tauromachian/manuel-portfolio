@@ -13,7 +13,7 @@ export default {
 <template>
   <!-- Contact form -->
   <div class="w-full max-w-xl md:w-2/3 flex justify-center items-center">
-    <div class="absolute -right-16 z-0">
+    <div class="absolute right-0 z-0">
       <img class="object-contain w-2/3 h-auto" src="/claveSol.svg" alt="" />
     </div>
     <div

@@ -199,3 +199,7 @@
 .font-general-bold-italic {
   font-family: "GeneralSans-BoldItalic";
 }
+
+html, body {
+  overflow-x: hidden;
+}

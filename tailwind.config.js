@@ -7,6 +7,9 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
+    "./node_modules/tailwindcss/dist/base.css",
+    "./node_modules/tailwindcss/dist/components.css",
+    "./node_modules/tailwindcss/dist/utilities.css",
   ],
   darkMode: "class",
   theme: {

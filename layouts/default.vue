@@ -9,6 +9,7 @@
     </transition>
 
     <AboutMe></AboutMe>
+
     <MostRecent></MostRecent>
     <!-- App footer -->
     <Contact />
