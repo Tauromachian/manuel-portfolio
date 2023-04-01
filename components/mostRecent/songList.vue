@@ -118,69 +118,6 @@ export default {
           src: "/music/004 Billy Joel - Honesty.mp3",
           name: "Billy Joel - Honesty",
         },
-        {
-          img: "/music/img/EuropeCarrie.jpg",
-          src: "/music/001Europe-Carrie.mp3",
-          name: "Europe - Carrie",
-        },
-        {
-          img: "/music/img/TotoAfrica.jpg",
-          src: "/music/002 Toto - Africa.mp3",
-          name: "Toto - Africa",
-        },
-
-        {
-          img: "/music/img/Phill Collins - Another Day In Paradise.jpg",
-          src: "/music/003 Phill Collins - Another Day In Paradise.mp3",
-          name: "Phill Collins - Another Day In Paradise",
-        },
-        {
-          img: "/music/img/Billy Joel - Honesty.jpg",
-          src: "/music/004 Billy Joel - Honesty.mp3",
-          name: "Billy Joel - Honesty",
-        },
-        {
-          img: "/music/img/EuropeCarrie.jpg",
-          src: "/music/001Europe-Carrie.mp3",
-          name: "Europe - Carrie",
-        },
-        {
-          img: "/music/img/TotoAfrica.jpg",
-          src: "/music/002 Toto - Africa.mp3",
-          name: "Toto - Africa",
-        },
-
-        {
-          img: "/music/img/Phill Collins - Another Day In Paradise.jpg",
-          src: "/music/003 Phill Collins - Another Day In Paradise.mp3",
-          name: "Phill Collins - Another Day In Paradise",
-        },
-        {
-          img: "/music/img/Billy Joel - Honesty.jpg",
-          src: "/music/004 Billy Joel - Honesty.mp3",
-          name: "Billy Joel - Honesty",
-        },
-        {
-          img: "/music/img/EuropeCarrie.jpg",
-          src: "/music/001Europe-Carrie.mp3",
-          name: "Europe - Carrie",
-        },
-        {
-          img: "/music/img/TotoAfrica.jpg",
-          src: "/music/002 Toto - Africa.mp3",
-          name: "Toto - Africa",
-        },
-
-        {
-          img: "/music/img/Phill Collins - Another Day In Paradise.jpg",
-          src: "/music/003 Phill Collins - Another Day In Paradise.mp3",
-          name: "Phill Collins - Another Day In Paradise",
-        },
-        {
-          img: "/music/img/Billy Joel - Honesty.jpg",
-          src: "/music/004 Billy Joel - Honesty.mp3",
-          name: "Billy Joel - Honesty",
-        },
       ],
       audio: null,
     };
