@@ -1,6 +1,6 @@
 <template>
-  <section id="recent">
-    <div class="pl-5 md:pl-28 text-white">
+  <section id="recent ">
+    <div class="pl-5 mt-56 md:mt-0 md:pl-28 text-white">
       <h3 class="text-6xl textTitle">Lo más reciente</h3>
       <ul class="flex">
         <li
