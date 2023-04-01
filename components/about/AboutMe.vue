@@ -37,7 +37,7 @@
         style="height: 400px"
         class="w-full rounded-full flex justify-center items-center z-10"
       >
-        <div class="flex flex-col space-x-2 px-10 ml-12">
+        <div class="flex flex-col space-x-2 px-1 ml-3 md:px-10 md:ml-12">
           <div>
             <h3 class="generosFont text-3xl ml-4">Géneros</h3>
           </div>
